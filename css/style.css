@@ -1,6 +1,6 @@
 /* ============================================================
    LEIOLA GROUP LTD — STYLE.CSS
-   Luxury Duty-Free Retail · Warm Gold + Cream + Dark Brown
+   Duty-Free Retail · Lime Green + Cream + Dark Brown
    ============================================================ */
 
 /* ─── RESET ───────────────────────────────────────────────── */
@@ -14,12 +14,12 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
 
 /* ─── DESIGN TOKENS ───────────────────────────────────────── */
 :root{
-  --gold:#c9a84c;
-  --gold-dark:#8a6e24;
-  --gold-light:#e8c97a;
-  --gold-pale:rgba(201,168,76,0.10);
+  --gold:#5cb830;
+  --gold-dark:#3d8020;
+  --gold-light:#8fd45a;
+  --gold-pale:rgba(92,184,48,0.10);
   --dark:#1c1208;
-  --dark-2:#2e1e08;
+  --dark-2:#1a2210;
   --bg:#faf7f2;
   --bg-2:#f3ede3;
   --bg-3:#e8dfd0;
@@ -27,7 +27,7 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
   --text:#1c1208;
   --text-mid:#5c4a2a;
   --text-light:#9c8660;
-  --border:rgba(201,168,76,0.20);
+  --border:rgba(92,184,48,0.22);
   --border-dark:rgba(28,18,8,0.10);
   --shadow-sm:0 2px 8px rgba(28,18,8,0.07);
   --shadow:0 4px 24px rgba(28,18,8,0.11);
@@ -96,10 +96,10 @@ p{color:var(--text-mid);line-height:1.75}
 
 /* ─── HERO ────────────────────────────────────────────────── */
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;background:var(--dark);padding-top:72px;overflow:hidden}
-.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:0.22}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(28,18,8,0.95) 0%,rgba(28,18,8,0.72) 55%,rgba(46,30,8,0.50) 100%)}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:0.55}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(28,18,8,0.88) 0%,rgba(28,18,8,0.60) 55%,rgba(20,40,10,0.45) 100%)}
 .hero-content{position:relative;z-index:1;max-width:680px}
-.hero-badge{display:inline-flex;align-items:center;gap:10px;padding:9px 18px;background:rgba(201,168,76,0.12);border:1px solid rgba(201,168,76,0.28);border-radius:20px;color:var(--gold-light);font-size:0.70rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;margin-bottom:28px}
+.hero-badge{display:inline-flex;align-items:center;gap:10px;padding:9px 18px;background:rgba(92,184,48,0.12);border:1px solid rgba(92,184,48,0.28);border-radius:20px;color:var(--gold-light);font-size:0.70rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;margin-bottom:28px}
 .hero h1{color:var(--white);margin-bottom:6px}
 .hero h1 em{color:var(--gold-light);font-style:italic}
 .hero-sub{font-size:1.05rem;color:rgba(255,255,255,0.58);margin:16px 0 40px;max-width:460px;line-height:1.7}
@@ -110,7 +110,7 @@ p{color:var(--text-mid);line-height:1.75}
 
 /* ─── PAGE HERO ───────────────────────────────────────────── */
 .page-hero{background:var(--dark);padding:140px 0 80px;overflow:hidden;position:relative}
-.page-hero::before{content:'';position:absolute;top:-80px;right:-80px;width:480px;height:480px;background:radial-gradient(circle,rgba(201,168,76,0.08) 0%,transparent 65%);pointer-events:none}
+.page-hero::before{content:'';position:absolute;top:-80px;right:-80px;width:480px;height:480px;background:radial-gradient(circle,rgba(92,184,48,0.08) 0%,transparent 65%);pointer-events:none}
 .page-hero .container{text-align:center;position:relative;z-index:1}
 .page-hero h1{color:var(--white)}
 .page-hero p{color:rgba(255,255,255,0.52);margin:14px auto 0;max-width:520px}
@@ -120,10 +120,10 @@ p{color:var(--text-mid);line-height:1.75}
 .breadcrumb-sep{color:rgba(255,255,255,0.18)}
 
 /* ─── MARQUEE ─────────────────────────────────────────────── */
-.marquee-section{background:var(--dark-2);padding:16px 0;overflow:hidden;border-top:1px solid rgba(201,168,76,0.10);border-bottom:1px solid rgba(201,168,76,0.10)}
+.marquee-section{background:var(--dark-2);padding:16px 0;overflow:hidden;border-top:1px solid rgba(92,184,48,0.10);border-bottom:1px solid rgba(92,184,48,0.10)}
 .marquee-track{display:flex;white-space:nowrap;animation:marqueeScroll 32s linear infinite}
 .marquee-track:hover{animation-play-state:paused}
-.marquee-item{display:inline-flex;align-items:center;gap:20px;padding:0 28px;font-family:var(--font-heading);font-size:1rem;font-weight:400;font-style:italic;color:rgba(201,168,76,0.65);letter-spacing:0.04em}
+.marquee-item{display:inline-flex;align-items:center;gap:20px;padding:0 28px;font-family:var(--font-heading);font-size:1rem;font-weight:400;font-style:italic;color:rgba(92,184,48,0.65);letter-spacing:0.04em}
 .marquee-dot{width:4px;height:4px;background:var(--gold);border-radius:50%;opacity:0.45;flex-shrink:0}
 @keyframes marqueeScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
@@ -160,9 +160,9 @@ p{color:var(--text-mid);line-height:1.75}
 
 /* ─── EXCLUSIVE BRAND CARDS (dark section) ────────────────── */
 .brands-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.brand-card{background:rgba(255,255,255,0.03);border:1px solid rgba(201,168,76,0.16);border-radius:var(--radius);padding:40px 28px;text-align:center;transition:all var(--ease)}
-.brand-card:hover{background:rgba(201,168,76,0.06);border-color:rgba(201,168,76,0.35);transform:translateY(-2px)}
-.brand-card-icon{width:64px;height:64px;background:rgba(201,168,76,0.10);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;color:var(--gold-light)}
+.brand-card{background:rgba(255,255,255,0.03);border:1px solid rgba(92,184,48,0.16);border-radius:var(--radius);padding:40px 28px;text-align:center;transition:all var(--ease)}
+.brand-card:hover{background:rgba(92,184,48,0.06);border-color:rgba(92,184,48,0.35);transform:translateY(-2px)}
+.brand-card-icon{width:64px;height:64px;background:rgba(92,184,48,0.10);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;color:var(--gold-light)}
 .brand-card h3{font-size:1.6rem;color:var(--white);margin-bottom:10px}
 .brand-card p{font-size:0.875rem;color:rgba(255,255,255,0.48);margin:0;line-height:1.7}
 
@@ -195,10 +195,10 @@ p{color:var(--text-mid);line-height:1.75}
 
 /* ─── DISCOUNT SECTION ────────────────────────────────────── */
 .discount-hero-box{background:var(--dark);border-radius:var(--radius-lg);padding:64px 48px;text-align:center;position:relative;overflow:hidden;margin:0 auto;max-width:780px}
-.discount-hero-box::before{content:'';position:absolute;top:-80px;right:-80px;width:320px;height:320px;background:radial-gradient(circle,rgba(201,168,76,0.12) 0%,transparent 65%);pointer-events:none}
+.discount-hero-box::before{content:'';position:absolute;top:-80px;right:-80px;width:320px;height:320px;background:radial-gradient(circle,rgba(92,184,48,0.12) 0%,transparent 65%);pointer-events:none}
 .discount-big{font-family:var(--font-heading);font-size:clamp(5rem,12vw,9rem);font-weight:700;color:var(--gold);line-height:1;display:block}
 .discount-big-label{font-size:1.2rem;color:rgba(255,255,255,0.65);font-family:var(--font-heading);font-style:italic;display:block;margin-top:-8px;margin-bottom:24px}
-.discount-code-box{display:inline-flex;align-items:center;gap:14px;padding:16px 28px;background:rgba(201,168,76,0.10);border:1.5px dashed rgba(201,168,76,0.40);border-radius:var(--radius-sm);margin:0 0 28px}
+.discount-code-box{display:inline-flex;align-items:center;gap:14px;padding:16px 28px;background:rgba(92,184,48,0.10);border:1.5px dashed rgba(92,184,48,0.40);border-radius:var(--radius-sm);margin:0 0 28px}
 .discount-code{font-family:monospace;font-size:1.6rem;font-weight:700;color:var(--gold-light);letter-spacing:0.16em}
 .copy-btn{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;background:var(--gold);color:var(--dark);border-radius:4px;font-size:0.76rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;transition:all var(--ease);border:none;font-family:var(--font-body)}
 .copy-btn:hover{background:var(--gold-dark);color:var(--white)}
@@ -230,7 +230,7 @@ p{color:var(--text-mid);line-height:1.75}
 
 /* ─── CTA SECTION ─────────────────────────────────────────── */
 .cta-section{padding:96px 0;background:var(--dark);position:relative;overflow:hidden;text-align:center}
-.cta-section::before{content:'';position:absolute;bottom:-80px;left:50%;transform:translateX(-50%);width:600px;height:600px;background:radial-gradient(circle,rgba(201,168,76,0.08) 0%,transparent 65%);pointer-events:none}
+.cta-section::before{content:'';position:absolute;bottom:-80px;left:50%;transform:translateX(-50%);width:600px;height:600px;background:radial-gradient(circle,rgba(92,184,48,0.08) 0%,transparent 65%);pointer-events:none}
 .cta-section .container{position:relative;z-index:1}
 .cta-section h2{color:var(--white)}
 .cta-section p{color:rgba(255,255,255,0.55);max-width:480px;margin:14px auto 0}
@@ -250,7 +250,7 @@ p{color:var(--text-mid);line-height:1.75}
 
 /* ─── FOOTER ──────────────────────────────────────────────── */
 .footer{background:var(--dark)}
-.footer-brand-bar{background:rgba(0,0,0,0.25);padding:13px 0;text-align:center;border-bottom:1px solid rgba(201,168,76,0.10)}
+.footer-brand-bar{background:rgba(0,0,0,0.25);padding:13px 0;text-align:center;border-bottom:1px solid rgba(92,184,48,0.10)}
 .footer-brand-bar span{font-size:0.66rem;font-weight:700;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold)}
 .footer-main{padding:64px 0}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.2fr;gap:48px}
