@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Leiola Group Ltd — reach our team by phone, email or contact form. Six locations across the Kingdom of Tonga.">
+  <title>Contact Us — Leiola Group Ltd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=1">
+  <style>
+    @media(max-width:900px){
+      .nav-menu{display:flex!important;position:fixed!important;top:0!important;left:0!important;right:0!important;bottom:0!important;width:100vw!important;height:100vh!important;background:#1c1208!important;flex-direction:column!important;align-items:center!important;justify-content:flex-start!important;gap:4px!important;padding:96px 28px 40px!important;overflow-y:auto!important;z-index:9999!important;opacity:0!important;transform:translateX(100%)!important;pointer-events:none!important;transition:opacity .35s ease,transform .35s cubic-bezier(.4,0,.2,1)!important}
+      .nav-menu.open{opacity:1!important;transform:translateX(0)!important;pointer-events:all!important}
+      .nav-toggle{display:flex!important;z-index:10000!important;position:relative!important}
+      .nav-menu a{font-size:1.1rem!important;padding:13px 28px!important;font-weight:600!important;color:rgba(255,255,255,0.85)!important;width:100%!important;text-align:center!important;display:block!important;border-radius:8px!important}
+      .nav-menu a:hover,.nav-menu a.active{color:#fff!important;background:rgba(201,168,76,0.15)!important}
+      .nav-cta{background:#c9a84c!important;color:#1c1208!important;border-radius:6px!important;margin-top:12px!important;font-weight:700!important}
+    }
+    html,body{overflow-x:hidden!important}
+    .quick-stores{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+    .quick-store{background:var(--bg-2);border:1px solid var(--border-dark);border-radius:var(--radius-sm);padding:16px}
+    .quick-store-type{font-size:0.64rem;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin-bottom:4px;display:block}
+    .quick-store h4{font-size:0.9rem;margin-bottom:4px}
+    .quick-store a{font-size:0.8rem;color:var(--text-mid);transition:color var(--ease);display:block}
+    .quick-store a:hover{color:var(--gold-dark)}
+    @media(max-width:768px){.quick-stores{grid-template-columns:1fr 1fr}}
+    @media(max-width:480px){.quick-stores{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-text">Leiola Group<span>Duty Free · Kingdom of Tonga</span></div>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="has-dropdown">
+          <a href="products.html">Products <span class="icon" data-icon="chevron-down" style="width:14px;height:14px;"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="products.html#liquor">Liquor &amp; Spirits</a></li>
+            <li><a href="products.html#wine">Wine &amp; Champagne</a></li>
+            <li><a href="products.html#fragrance">Fragrance</a></li>
+            <li><a href="products.html#tobacco">Tobacco</a></li>
+            <li><a href="products.html#confectionery">Confectionery</a></li>
+            <li><a href="products.html#jerseys">Rugby Jerseys</a></li>
+          </ul>
+        </li>
+        <li><a href="brands.html">Brands</a></li>
+        <li><a href="stores.html">Stores</a></li>
+        <li><a href="contact.html" class="nav-cta active">Contact Us</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="icon" data-icon="menu" style="width:22px;height:22px;"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">/</span>
+      <span>Contact Us</span>
+    </div>
+    <span class="eyebrow">Get in Touch</span>
+    <h1>We'd Love to<br>Hear From <em>You</em></h1>
+    <p>Product enquiries, pre-orders, wholesale requests or general questions — our team is ready to help.</p>
+  </div>
+</section>
+
+<!-- CONTACT FORM + INFO -->
+<section class="section">
+  <div class="container">
+    <div class="contact-grid" data-reveal>
+
+      <!-- FORM -->
+      <div>
+        <span class="eyebrow">Send a Message</span>
+        <h2 style="font-size:2rem;margin-bottom:8px;">Drop Us a Line</h2>
+        <div class="divider-left"></div>
+        <form action="mailto:sales@leiola.to" method="post" enctype="text/plain">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="name">Full Name *</label>
+              <input class="form-input" type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="phone">Phone Number</label>
+              <input class="form-input" type="tel" id="phone" name="phone" placeholder="Your phone number">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address *</label>
+            <input class="form-input" type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="subject">Subject</label>
+            <select class="form-select" id="subject" name="subject">
+              <option value="">Select a topic...</option>
+              <option value="Product Enquiry">Product Enquiry</option>
+              <option value="Pre-Order / Online Order">Pre-Order / Online Order</option>
+              <option value="Jersey Order">Jersey Order ('Ikale Tahi / Mate Ma'a Tonga)</option>
+              <option value="KooGa Enquiry">KooGa Sportswear Enquiry</option>
+              <option value="Wholesale">Wholesale / Bulk Order</option>
+              <option value="Store Information">Store Information</option>
+              <option value="General">General Enquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message *</label>
+            <textarea class="form-textarea" id="message" name="message" placeholder="Tell us what you need..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+            Send Message <span class="icon" data-icon="arrow-right" style="width:16px;height:16px;"></span>
+          </button>
+        </form>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div>
+        <div class="contact-info-block">
+          <span class="eyebrow">Contact Details</span>
+          <h3>Reach Us Directly</h3>
+          <div class="divider-left"></div>
+
+          <div class="contact-info-item">
+            <span class="icon" data-icon="mail"></span>
+            <div>
+              <span class="contact-info-label">Email</span>
+              <div class="contact-info-value"><a href="mailto:sales@leiola.to">sales@leiola.to</a></div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <span class="icon" data-icon="phone"></span>
+            <div>
+              <span class="contact-info-label">Head Office</span>
+              <div class="contact-info-value"><a href="tel:+67627945">(+676) 27 945</a></div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <span class="icon" data-icon="phone"></span>
+            <div>
+              <span class="contact-info-label">Downtown Store (Orders)</span>
+              <div class="contact-info-value"><a href="tel:+67625222">(+676) 25 222</a></div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <span class="icon" data-icon="phone"></span>
+            <div>
+              <span class="contact-info-label">Airport Shops</span>
+              <div class="contact-info-value"><a href="tel:+67635011">(+676) 35 011</a></div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <span class="icon" data-icon="phone"></span>
+            <div>
+              <span class="contact-info-label">Neiafu Vava'u</span>
+              <div class="contact-info-value"><a href="tel:+67670748">(+676) 70 748</a></div>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <span class="icon" data-icon="map-pin"></span>
+            <div>
+              <span class="contact-info-label">Headquarters</span>
+              <div class="contact-info-value">
+                <a href="https://www.google.com/maps?q=-21.1368,-175.2011" target="_blank" rel="noopener">
+                  Dateline House, Unit 2<br>Ma'ufanga, Nuku'alofa<br>Kingdom of Tonga
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:8px;padding-top:20px;border-top:1px solid var(--border-dark);">
+            <p style="font-size:0.82rem;color:var(--text-light);line-height:1.65;">For pre-orders: call or email with your product list, mention code <strong style="color:var(--gold-dark);">DISCOUNT</strong> for 10% off, then collect at any store or airport.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- QUICK STORE REFERENCE -->
+<section class="section-alt">
+  <div class="container">
+    <div class="section-header" data-reveal>
+      <span class="eyebrow">All Locations</span>
+      <h2>Six Stores at a Glance</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="quick-stores" data-reveal>
+      <div class="quick-store">
+        <span class="quick-store-type">Head Office</span>
+        <h4>Leiola Head Office</h4>
+        <a href="tel:+67627945">(+676) 27 945</a>
+        <a href="https://www.google.com/maps?q=-21.1368,-175.2011" target="_blank" rel="noopener">Dateline House, Ma'ufanga</a>
+      </div>
+      <div class="quick-store">
+        <span class="quick-store-type">Airport · Arrivals</span>
+        <h4>Fua'amotu Arrival</h4>
+        <a href="tel:+67635011">(+676) 35 011</a>
+        <a href="https://www.google.com/maps?q=-21.2411,-175.1258" target="_blank" rel="noopener">Fua'amotu International Airport</a>
+      </div>
+      <div class="quick-store">
+        <span class="quick-store-type">Airport · Departures</span>
+        <h4>Fua'amotu Departure</h4>
+        <a href="tel:+67635011">(+676) 35 011</a>
+        <a href="https://www.google.com/maps?q=-21.2411,-175.1258" target="_blank" rel="noopener">Fua'amotu International Airport</a>
+      </div>
+      <div class="quick-store">
+        <span class="quick-store-type">Retail · Downtown</span>
+        <h4>Downtown Nuku'alofa</h4>
+        <a href="tel:+67625222">(+676) 25 222</a>
+        <span style="font-size:0.8rem;color:var(--text-light);">Mon–Sat 9am–7pm</span>
+      </div>
+      <div class="quick-store">
+        <span class="quick-store-type">Duty Free · Vava'u</span>
+        <h4>Neiafu Vava'u</h4>
+        <a href="tel:+67670748">(+676) 70 748</a>
+        <a href="https://www.google.com/maps?q=-18.6516,-173.9891" target="_blank" rel="noopener">Fatafatamafana Centre</a>
+      </div>
+      <div class="quick-store">
+        <span class="quick-store-type">Marine · Wharf</span>
+        <h4>Queen Salote Wharf</h4>
+        <a href="tel:+67622709">(+676) 22 709</a>
+        <a href="https://www.google.com/maps?q=-21.1388,-175.1995" target="_blank" rel="noopener">Queen Salote Wharf, Nuku'alofa</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-brand-bar">
+    <span>Best Prices in The Pacific · Est. 1994 · Kingdom of Tonga</span>
+  </div>
+  <div class="footer-main">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo-text">Leiola Group<span>Duty Free</span></div>
+          <p>Tonga's sole duty-free retailer since 1994. Specialising in world-class brands across liquor, wine, fragrance, tobacco, confectionery and exclusive sportswear.</p>
+          <span class="footer-tagline">"Best Prices in The Pacific"</span>
+        </div>
+        <div>
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="brands.html">Exclusive Brands</a></li>
+            <li><a href="stores.html">Store Locations</a></li>
+            <li><a href="discount.html">Shop Online</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contact</h5>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="tel:+67627945">(+676) 27 945</a></li>
+            <li><a href="tel:+67625222">(+676) 25 222</a></li>
+            <li><a href="mailto:sales@leiola.to">sales@leiola.to</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Headquarters</h5>
+          <ul class="footer-links">
+            <li><a href="https://www.google.com/maps?q=-21.1368,-175.2011" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.32);text-decoration:none;line-height:1.7;">Dateline House, Unit 2<br>Ma'ufanga, Nuku'alofa<br>Kingdom of Tonga</a></li>
+          </ul>
+          <p style="margin-top:16px;font-size:0.72rem;color:rgba(255,255,255,0.18);line-height:1.6;">A subsidiary of Pacific Retail Ltd</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© 2026 Leiola Group Ltd. All rights reserved.</span>
+      <span style="color:rgba(255,255,255,0.16);">Nuku'alofa, Kingdom of Tonga</span>
+    </div>
+  </div>
+</footer>
+
+<a href="#" class="back-to-top" aria-label="Back to top">
+  <span class="icon" data-icon="arrow-up" style="width:18px;height:18px;"></span>
+</a>
+<script src="js/icons.js?v=1"></script>
+<script src="js/main.js?v=1"></script>
+</body>
+</html>

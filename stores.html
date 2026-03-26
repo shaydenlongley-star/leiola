@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Leiola Group has six store locations across the Kingdom of Tonga — Head Office, Fua'amotu Airport arrival and departure shops, Downtown Nuku'alofa, Neiafu Vava'u and Queen Salote Wharf.">
+  <title>Store Locations — Leiola Group Ltd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=1">
+  <style>
+    @media(max-width:900px){
+      .nav-menu{display:flex!important;position:fixed!important;top:0!important;left:0!important;right:0!important;bottom:0!important;width:100vw!important;height:100vh!important;background:#1c1208!important;flex-direction:column!important;align-items:center!important;justify-content:flex-start!important;gap:4px!important;padding:96px 28px 40px!important;overflow-y:auto!important;z-index:9999!important;opacity:0!important;transform:translateX(100%)!important;pointer-events:none!important;transition:opacity .35s ease,transform .35s cubic-bezier(.4,0,.2,1)!important}
+      .nav-menu.open{opacity:1!important;transform:translateX(0)!important;pointer-events:all!important}
+      .nav-toggle{display:flex!important;z-index:10000!important;position:relative!important}
+      .nav-menu a{font-size:1.1rem!important;padding:13px 28px!important;font-weight:600!important;color:rgba(255,255,255,0.85)!important;width:100%!important;text-align:center!important;display:block!important;border-radius:8px!important}
+      .nav-menu a:hover,.nav-menu a.active{color:#fff!important;background:rgba(201,168,76,0.15)!important}
+      .nav-cta{background:#c9a84c!important;color:#1c1208!important;border-radius:6px!important;margin-top:12px!important;font-weight:700!important}
+    }
+    html,body{overflow-x:hidden!important}
+    .airport-note{background:var(--gold-pale);border:1px solid var(--border);border-radius:var(--radius);padding:20px 24px;display:flex;gap:14px;align-items:flex-start;margin-bottom:40px}
+    .airport-note .icon{color:var(--gold);flex-shrink:0;width:20px;height:20px;margin-top:2px}
+    .airport-note p{font-size:0.875rem;color:var(--text-mid);margin:0}
+  </style>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-text">Leiola Group<span>Duty Free · Kingdom of Tonga</span></div>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="has-dropdown">
+          <a href="products.html">Products <span class="icon" data-icon="chevron-down" style="width:14px;height:14px;"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="products.html#liquor">Liquor &amp; Spirits</a></li>
+            <li><a href="products.html#wine">Wine &amp; Champagne</a></li>
+            <li><a href="products.html#fragrance">Fragrance</a></li>
+            <li><a href="products.html#tobacco">Tobacco</a></li>
+            <li><a href="products.html#confectionery">Confectionery</a></li>
+            <li><a href="products.html#jerseys">Rugby Jerseys</a></li>
+          </ul>
+        </li>
+        <li><a href="brands.html">Brands</a></li>
+        <li><a href="stores.html" class="active">Stores</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="icon" data-icon="menu" style="width:22px;height:22px;"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">/</span>
+      <span>Store Locations</span>
+    </div>
+    <span class="eyebrow">Find Us</span>
+    <h1>Six Locations Across<br>the <em>Kingdom</em></h1>
+    <p>From the airport to downtown Nuku'alofa to Neiafu Vava'u — Leiola is wherever you are in Tonga.</p>
+  </div>
+</section>
+
+<!-- STORES -->
+<section class="section">
+  <div class="container">
+
+    <div class="airport-note" data-reveal>
+      <span class="icon" data-icon="plane"></span>
+      <p><strong>Travelling through Fua'amotu International Airport?</strong> Pre-order your duty-free by phone or email, pay at any of our stores, and collect from our Arrival or Departure shop when you land or before you board. Simple, convenient, and fully duty-free.</p>
+    </div>
+
+    <div class="stores-grid">
+
+      <div class="store-card" data-reveal data-delay="1">
+        <div class="store-card-icon"><span class="icon" data-icon="building" style="width:20px;height:20px;"></span></div>
+        <span class="store-card-type">Head Office</span>
+        <h4>Leiola Head Office</h4>
+        <p>Dateline House, Unit 2, Ma'ufanga</p>
+        <p>Nuku'alofa, Tongatapu</p>
+        <a href="tel:+67627945">(+676) 27 945</a><br>
+        <a href="mailto:sales@leiola.to">sales@leiola.to</a>
+        <div class="store-hours">
+          <span class="icon" data-icon="clock"></span>
+          Monday – Friday
+        </div>
+        <div style="margin-top:12px;">
+          <a href="https://www.google.com/maps?q=-21.1368,-175.2011" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;font-size:0.78rem;font-weight:600;color:var(--gold-dark);text-decoration:none;">
+            <span class="icon" data-icon="map-pin" style="width:14px;height:14px;"></span> View on Map
+          </a>
+        </div>
+      </div>
+
+      <div class="store-card" data-reveal data-delay="2">
+        <div class="store-card-icon"><span class="icon" data-icon="plane" style="width:20px;height:20px;"></span></div>
+        <span class="store-card-type">Airport · Arrivals</span>
+        <h4>Fua'amotu Arrival Shop</h4>
+        <p>Fua'amotu International Airport</p>
+        <p>Tongatapu</p>
+        <a href="tel:+67635011">(+676) 35 011</a><br>
+        <a href="mailto:sales@leiola.to">sales@leiola.to</a>
+        <div class="store-hours">
+          <span class="icon" data-icon="clock"></span>
+          Open to all arrival flights
+        </div>
+        <div style="margin-top:12px;">
+          <a href="https://www.google.com/maps?q=-21.2411,-175.1258" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;font-size:0.78rem;font-weight:600;color:var(--gold-dark);text-decoration:none;">
+            <span class="icon" data-icon="map-pin" style="width:14px;height:14px;"></span> View on Map
+          </a>
+        </div>
+      </div>
+
+      <div class="store-card" data-reveal data-delay="3">
+        <div class="store-card-icon"><span class="icon" data-icon="plane" style="width:20px;height:20px;"></span></div>
+        <span class="store-card-type">Airport · Departures</span>
+        <h4>Fua'amotu Departure Shop</h4>
+        <p>Fua'amotu International Airport</p>
+        <p>Tongatapu (Airside)</p>
+        <a href="tel:+67635011">(+676) 35 011</a><br>
+        <a href="mailto:sales@leiola.to">sales@leiola.to</a>
+        <div class="store-hours">
+          <span class="icon" data-icon="clock"></span>
+          Open to all departure flights
+        </div>
+        <div style="margin-top:12px;">
+          <a href="https://www.google.com/maps?q=-21.2411,-175.1258" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;font-size:0.78rem;font-weight:600;color:var(--gold-dark);text-decoration:none;">
+            <span class="icon" data-icon="map-pin" style="width:14px;height:14px;"></span> View on Map
+          </a>
+        </div>
+      </div>
+
+      <div class="store-card" data-reveal data-delay="1">
+        <div class="store-card-icon"><span class="icon" data-icon="map-pin" style="width:20px;height:20px;"></span></div>
+        <span class="store-card-type">Retail · Downtown</span>
+        <h4>Downtown Nuku'alofa</h4>
+        <p>Nuku'alofa, Tongatapu</p>
+        <p>Duty Free &amp; Retail Shop</p>
+        <a href="tel:+67625222">(+676) 25 222</a><br>
+        <a href="mailto:sales@leiola.to">sales@leiola.to</a>
+        <div class="store-hours">
+          <span class="icon" data-icon="clock"></span>
+          Mon–Sat 9:00am–7:00pm
+        </div>
+        <div style="margin-top:12px;">
+          <a href="https://www.google.com/maps?q=-21.1369,-175.2017" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;font-size:0.78rem;font-weight:600;color:var(--gold-dark);text-decoration:none;">
+            <span class="icon" data-icon="map-pin" style="width:14px;height:14px;"></span> View on Map
+          </a>
+        </div>
+      </div>
+
+      <div class="store-card" data-reveal data-delay="2">
+        <div class="store-card-icon"><span class="icon" data-icon="map-pin" style="width:20px;height:20px;"></span></div>
+        <span class="store-card-type">Duty Free · Vava'u</span>
+        <h4>Leiola Neiafu Vava'u</h4>
+        <p>Hala Tu'i, Fatafatamafana Centre</p>
+        <p>Neiafu, Vava'u</p>
+        <a href="tel:+67670748">(+676) 70 748</a><br>
+        <a href="mailto:sales@leiola.to">sales@leiola.to</a>
+        <div class="store-hours">
+          <span class="icon" data-icon="clock"></span>
+          Mon–Fri 9am–4pm · Sat 8am–1pm
+        </div>
+        <div style="margin-top:12px;">
+          <a href="https://www.google.com/maps?q=-18.6516,-173.9891" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;font-size:0.78rem;font-weight:600;color:var(--gold-dark);text-decoration:none;">
+            <span class="icon" data-icon="map-pin" style="width:14px;height:14px;"></span> View on Map
+          </a>
+        </div>
+      </div>
+
+      <div class="store-card" data-reveal data-delay="3">
+        <div class="store-card-icon"><span class="icon" data-icon="globe" style="width:20px;height:20px;"></span></div>
+        <span class="store-card-type">Marine · Wharf</span>
+        <h4>Queen Salote Wharf</h4>
+        <p>Queen Salote Wharf</p>
+        <p>Nuku'alofa, Tongatapu</p>
+        <a href="tel:+67622709">(+676) 22 709</a><br>
+        <a href="mailto:sales@leiola.to">sales@leiola.to</a>
+        <div class="store-hours">
+          <span class="icon" data-icon="clock"></span>
+          Catered to all cruise &amp; commercial vessels
+        </div>
+        <div style="margin-top:12px;">
+          <a href="https://www.google.com/maps?q=-21.1388,-175.1995" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;font-size:0.78rem;font-weight:600;color:var(--gold-dark);text-decoration:none;">
+            <span class="icon" data-icon="map-pin" style="width:14px;height:14px;"></span> View on Map
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PRE-ORDER INFO -->
+<section class="section-alt" data-reveal>
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">How It Works</span>
+      <h2>Pre-Order &amp; <em>Collect at the Airport</em></h2>
+      <div class="divider"></div>
+      <p>Save time and money by pre-ordering your duty-free before you travel. It's easy — and you'll save 10% when you order online.</p>
+    </div>
+    <div class="steps-row">
+      <div class="step-item" data-reveal data-delay="1">
+        <div class="step-number">1</div>
+        <h4>Browse &amp; Order</h4>
+        <p>Browse our product range online, by phone (+676 25 222) or by email at sales@leiola.to and place your order.</p>
+      </div>
+      <div class="step-item" data-reveal data-delay="2">
+        <div class="step-number">2</div>
+        <h4>Pay at Our Store</h4>
+        <p>Visit any Leiola store to pay for your order. Use code <strong>DISCOUNT</strong> online for 10% off (excludes deals and jerseys).</p>
+      </div>
+      <div class="step-item" data-reveal data-delay="3">
+        <div class="step-number">3</div>
+        <h4>Collect at the Airport</h4>
+        <p>Present your order ID at our Fua'amotu arrival or departure shop and collect your duty-free goods — packed and ready.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <span class="eyebrow">Get in Touch</span>
+    <h2>Questions About a Store?</h2>
+    <p>Contact our team for information about stock availability, opening times or to place a pre-order at any of our locations.</p>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn btn-primary">Contact Us</a>
+      <a href="tel:+67625222" class="btn btn-ghost-light">
+        <span class="icon" data-icon="phone" style="width:16px;height:16px;"></span> (+676) 25 222
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-brand-bar">
+    <span>Best Prices in The Pacific · Est. 1994 · Kingdom of Tonga</span>
+  </div>
+  <div class="footer-main">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo-text">Leiola Group<span>Duty Free</span></div>
+          <p>Tonga's sole duty-free retailer since 1994. Specialising in world-class brands across liquor, wine, fragrance, tobacco, confectionery and exclusive sportswear.</p>
+          <span class="footer-tagline">"Best Prices in The Pacific"</span>
+        </div>
+        <div>
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="brands.html">Exclusive Brands</a></li>
+            <li><a href="stores.html">Store Locations</a></li>
+            <li><a href="discount.html">Shop Online</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contact</h5>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="tel:+67627945">(+676) 27 945</a></li>
+            <li><a href="tel:+67625222">(+676) 25 222</a></li>
+            <li><a href="mailto:sales@leiola.to">sales@leiola.to</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Headquarters</h5>
+          <ul class="footer-links">
+            <li><a href="https://www.google.com/maps?q=-21.1368,-175.2011" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.32);text-decoration:none;line-height:1.7;">Dateline House, Unit 2<br>Ma'ufanga, Nuku'alofa<br>Kingdom of Tonga</a></li>
+          </ul>
+          <p style="margin-top:16px;font-size:0.72rem;color:rgba(255,255,255,0.18);line-height:1.6;">A subsidiary of Pacific Retail Ltd</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© 2026 Leiola Group Ltd. All rights reserved.</span>
+      <span style="color:rgba(255,255,255,0.16);">Nuku'alofa, Kingdom of Tonga</span>
+    </div>
+  </div>
+</footer>
+
+<a href="#" class="back-to-top" aria-label="Back to top">
+  <span class="icon" data-icon="arrow-up" style="width:18px;height:18px;"></span>
+</a>
+<script src="js/icons.js?v=1"></script>
+<script src="js/main.js?v=1"></script>
+</body>
+</html>

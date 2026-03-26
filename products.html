@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse Leiola's full product range — liquor, wine, champagne, fragrance, tobacco, confectionery and official rugby jerseys. All duty-free in Tonga.">
+  <title>Products — Leiola Group Ltd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=1">
+  <style>
+    @media(max-width:900px){
+      .nav-menu{display:flex!important;position:fixed!important;top:0!important;left:0!important;right:0!important;bottom:0!important;width:100vw!important;height:100vh!important;background:#1c1208!important;flex-direction:column!important;align-items:center!important;justify-content:flex-start!important;gap:4px!important;padding:96px 28px 40px!important;overflow-y:auto!important;z-index:9999!important;opacity:0!important;transform:translateX(100%)!important;pointer-events:none!important;transition:opacity .35s ease,transform .35s cubic-bezier(.4,0,.2,1)!important}
+      .nav-menu.open{opacity:1!important;transform:translateX(0)!important;pointer-events:all!important}
+      .nav-toggle{display:flex!important;z-index:10000!important;position:relative!important}
+      .nav-menu a{font-size:1.1rem!important;padding:13px 28px!important;font-weight:600!important;color:rgba(255,255,255,0.85)!important;width:100%!important;text-align:center!important;display:block!important;border-radius:8px!important}
+      .nav-menu a:hover,.nav-menu a.active{color:#fff!important;background:rgba(201,168,76,0.15)!important}
+      .nav-cta{background:#c9a84c!important;color:#1c1208!important;border-radius:6px!important;margin-top:12px!important;font-weight:700!important}
+    }
+    html,body{overflow-x:hidden!important}
+    .cat-nav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:48px}
+    .cat-nav a{padding:8px 18px;border:1.5px solid var(--border-dark);border-radius:20px;font-size:0.82rem;font-weight:600;color:var(--text-mid);transition:all var(--ease);text-decoration:none}
+    .cat-nav a:hover,.cat-nav a.active{background:var(--gold);color:var(--dark);border-color:var(--gold)}
+    .product-section-header{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:24px;flex-wrap:wrap;gap:16px}
+    .product-section-header h2{font-size:2rem}
+    .brand-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .brand-tag{padding:4px 12px;background:var(--gold-pale);border:1px solid var(--border);border-radius:12px;font-size:0.76rem;font-weight:600;color:var(--gold-dark)}
+  </style>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-text">Leiola Group<span>Duty Free · Kingdom of Tonga</span></div>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="has-dropdown">
+          <a href="products.html" class="active">Products <span class="icon" data-icon="chevron-down" style="width:14px;height:14px;"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="products.html#liquor">Liquor &amp; Spirits</a></li>
+            <li><a href="products.html#wine">Wine &amp; Champagne</a></li>
+            <li><a href="products.html#fragrance">Fragrance</a></li>
+            <li><a href="products.html#tobacco">Tobacco</a></li>
+            <li><a href="products.html#confectionery">Confectionery</a></li>
+            <li><a href="products.html#jerseys">Rugby Jerseys</a></li>
+          </ul>
+        </li>
+        <li><a href="brands.html">Brands</a></li>
+        <li><a href="stores.html">Stores</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="icon" data-icon="menu" style="width:22px;height:22px;"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">/</span>
+      <span>Products</span>
+    </div>
+    <span class="eyebrow">Our Range</span>
+    <h1>World-Class Brands,<br><em>Duty-Free Prices</em></h1>
+    <p>Six categories of the world's finest products — all available at exclusive duty-free prices, only in Tonga through Leiola.</p>
+  </div>
+</section>
+
+<!-- PROMO BAND -->
+<div class="promo-band">
+  <div class="container">
+    <span class="icon" data-icon="percent" style="width:16px;height:16px;color:#1c1208;"></span>
+    <span class="promo-band-text">Order online &amp; save 10% — use code</span>
+    <span class="promo-band-code">DISCOUNT</span>
+    <a href="discount.html" class="btn" style="padding:7px 16px;font-size:0.78rem;background:rgba(28,18,8,0.15);color:#1c1208;border-color:rgba(28,18,8,0.25);">How It Works</a>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<section class="section">
+  <div class="container">
+
+    <!-- Category quick-nav -->
+    <div class="cat-nav">
+      <a href="#liquor">Liquor &amp; Spirits</a>
+      <a href="#wine">Wine &amp; Champagne</a>
+      <a href="#fragrance">Fragrance</a>
+      <a href="#tobacco">Tobacco</a>
+      <a href="#confectionery">Confectionery</a>
+      <a href="#jerseys">Rugby Jerseys</a>
+    </div>
+
+    <!-- LIQUOR -->
+    <div class="product-section" id="liquor" data-reveal>
+      <div class="product-section-header">
+        <div>
+          <span class="eyebrow">Category 01</span>
+          <h2>Liquor &amp; Spirits</h2>
+          <div class="brand-tags">
+            <span class="brand-tag">Johnnie Walker</span>
+            <span class="brand-tag">Jack Daniel's</span>
+            <span class="brand-tag">Absolut</span>
+            <span class="brand-tag">Bombay Sapphire</span>
+            <span class="brand-tag">Bacardi</span>
+            <span class="brand-tag">Bundaberg</span>
+            <span class="brand-tag">Hennessy</span>
+            <span class="brand-tag">Baileys</span>
+            <span class="brand-tag">Chivas Regal</span>
+            <span class="brand-tag">+ Many More</span>
+          </div>
+        </div>
+      </div>
+      <div class="product-items-grid">
+        <div class="product-item">
+          <div class="product-item-img">
+            <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=400&q=80&auto=format&fit=crop" alt="Whisky and spirits" loading="lazy">
+          </div>
+          <div class="product-item-body">
+            <h4>Johnnie Walker Black Label</h4>
+            <p>1000ml · 40%</p>
+            <span class="product-price">TOP$ 69</span>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img">
+            <img src="https://images.unsplash.com/photo-1569529465841-dfecdab7503b?w=400&q=80&auto=format&fit=crop&crop=right" alt="Jack Daniels" loading="lazy">
+          </div>
+          <div class="product-item-body">
+            <h4>Jack Daniel's Tennessee Whiskey</h4>
+            <p>1000ml · 40%</p>
+            <span class="product-price">TOP$ 45</span>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img">
+            <img src="https://images.unsplash.com/photo-1600620931100-a59f4e3697f3?w=400&q=80&auto=format&fit=crop" alt="Vodka bottles" loading="lazy">
+          </div>
+          <div class="product-item-body">
+            <h4>Absolut Blue Vodka</h4>
+            <p>1000ml · 40% · All Flavours</p>
+            <span class="product-price">TOP$ 45</span>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img">
+            <img src="https://images.unsplash.com/photo-1527281400683-1aae777175f8?w=400&q=80&auto=format&fit=crop" alt="Gin bottles" loading="lazy">
+          </div>
+          <div class="product-item-body">
+            <h4>Bombay Sapphire Gin</h4>
+            <p>1000ml · 40%</p>
+            <span class="product-price">TOP$ 45</span>
+          </div>
+        </div>
+      </div>
+      <p style="margin-top:20px;font-size:0.84rem;color:var(--text-light);">Plus bourbon, cognac, rum, tequila, liqueurs and more. Contact us for full availability and pricing.</p>
+    </div>
+
+    <!-- WINE -->
+    <div class="product-section" id="wine" data-reveal>
+      <div class="product-section-header">
+        <div>
+          <span class="eyebrow">Category 02</span>
+          <h2>Wine &amp; Champagne</h2>
+          <div class="brand-tags">
+            <span class="brand-tag">Moët &amp; Chandon</span>
+            <span class="brand-tag">Babich</span>
+            <span class="brand-tag">Delegat's</span>
+            <span class="brand-tag">Deakin Estate</span>
+            <span class="brand-tag">McGuigan</span>
+            <span class="brand-tag">Jacob's Creek</span>
+          </div>
+        </div>
+      </div>
+      <div class="product-items-grid">
+        <div class="product-item">
+          <div class="product-item-img">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=400&q=80&auto=format&fit=crop" alt="Champagne" loading="lazy">
+          </div>
+          <div class="product-item-body">
+            <h4>Moët &amp; Chandon Nectar Impérial</h4>
+            <p>750ml Champagne</p>
+            <span class="product-price">TOP$ 135</span>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=400&q=80&auto=format&fit=crop&crop=left" alt="Wine bottles" loading="lazy">
+          </div>
+          <div class="product-item-body">
+            <h4>Moët &amp; Chandon Réserve Impérial</h4>
+            <p>750ml Champagne</p>
+            <span class="product-price">TOP$ 129</span>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img">
+            <img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=400&q=80&auto=format&fit=crop" alt="NZ wine" loading="lazy">
+          </div>
+          <div class="product-item-body">
+            <h4>Babich Hawke's Bay Merlot</h4>
+            <p>750ml · New Zealand</p>
+            <span class="product-price">FROM TOP$ 39</span>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img">
+            <img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?w=400&q=80&auto=format&fit=crop&crop=right" alt="Chardonnay" loading="lazy">
+          </div>
+          <div class="product-item-body">
+            <h4>Babich Lone Tree Chardonnay</h4>
+            <p>750ml · New Zealand</p>
+            <span class="product-price">TOP$ 19</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FRAGRANCE -->
+    <div class="product-section" id="fragrance" data-reveal>
+      <div class="product-section-header">
+        <div>
+          <span class="eyebrow">Category 03</span>
+          <h2>Fragrance</h2>
+          <div class="brand-tags">
+            <span class="brand-tag">Calvin Klein</span>
+            <span class="brand-tag">Davidoff</span>
+            <span class="brand-tag">Elizabeth Arden</span>
+            <span class="brand-tag">Britney Spears</span>
+            <span class="brand-tag">Lady Gaga</span>
+            <span class="brand-tag">JLo</span>
+            <span class="brand-tag">Juicy Couture</span>
+            <span class="brand-tag">John Varvatos</span>
+            <span class="brand-tag">Taylor Swift</span>
+          </div>
+        </div>
+      </div>
+      <div class="product-items-grid">
+        <div class="product-item">
+          <div class="product-item-img">
+            <img src="https://images.unsplash.com/photo-1541643600914-78b084683702?w=400&q=80&auto=format&fit=crop" alt="Fragrance collection" loading="lazy">
+          </div>
+          <div class="product-item-body">
+            <h4>CK Euphoria Forbidden EDT</h4>
+            <p>50ml · Women's Fragrance</p>
+            <span class="product-price">TOP$ 167</span>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img">
+            <img src="https://images.unsplash.com/photo-1592945403244-b3faa19bf5a4?w=400&q=80&auto=format&fit=crop" alt="Perfume bottles" loading="lazy">
+          </div>
+          <div class="product-item-body">
+            <h4>Davidoff Champion EDT</h4>
+            <p>50ml · Men's Fragrance</p>
+            <span class="product-price">TOP$ 115</span>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img">
+            <img src="https://images.unsplash.com/photo-1541643600914-78b084683702?w=400&q=80&auto=format&fit=crop&crop=right" alt="Women's fragrance" loading="lazy">
+          </div>
+          <div class="product-item-body">
+            <h4>CK Eternity Woman EDT</h4>
+            <p>100ml · Women's Fragrance</p>
+            <span class="product-price">TOP$ 181</span>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img">
+            <img src="https://images.unsplash.com/photo-1592945403244-b3faa19bf5a4?w=400&q=80&auto=format&fit=crop&crop=bottom" alt="Cool Water fragrance" loading="lazy">
+          </div>
+          <div class="product-item-body">
+            <h4>Davidoff Cool Water EDT</h4>
+            <p>125ml · Men's Fragrance</p>
+            <span class="product-price">TOP$ 105</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOBACCO -->
+    <div class="product-section" id="tobacco" data-reveal>
+      <div class="product-section-header">
+        <div>
+          <span class="eyebrow">Category 04</span>
+          <h2>Tobacco</h2>
+          <div class="brand-tags">
+            <span class="brand-tag">Marlboro</span>
+            <span class="brand-tag">Longbeach</span>
+            <span class="brand-tag">Pall Mall</span>
+            <span class="brand-tag">Winfield</span>
+            <span class="brand-tag">Port Royal</span>
+          </div>
+        </div>
+      </div>
+      <div class="product-items-grid">
+        <div class="product-item">
+          <div class="product-item-img" style="display:flex;align-items:center;justify-content:center;background:var(--bg-2);">
+            <span class="icon" data-icon="tag" style="width:48px;height:48px;color:var(--gold);opacity:0.4;"></span>
+          </div>
+          <div class="product-item-body">
+            <h4>Marlboro Red</h4>
+            <p>20s · 10 pack carton</p>
+            <span class="product-price">TOP$ 69</span>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img" style="display:flex;align-items:center;justify-content:center;background:var(--bg-2);">
+            <span class="icon" data-icon="tag" style="width:48px;height:48px;color:var(--gold);opacity:0.4;"></span>
+          </div>
+          <div class="product-item-body">
+            <h4>Longbeach Extra Mild</h4>
+            <p>25s · 200 stick carton</p>
+            <span class="product-price">TOP$ 69</span>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img" style="display:flex;align-items:center;justify-content:center;background:var(--bg-2);">
+            <span class="icon" data-icon="tag" style="width:48px;height:48px;color:var(--gold);opacity:0.4;"></span>
+          </div>
+          <div class="product-item-body">
+            <h4>Pall Mall Green</h4>
+            <p>20s · 200 stick carton</p>
+            <span class="product-price">TOP$ 75</span>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img" style="display:flex;align-items:center;justify-content:center;background:var(--bg-2);">
+            <span class="icon" data-icon="tag" style="width:48px;height:48px;color:var(--gold);opacity:0.4;"></span>
+          </div>
+          <div class="product-item-body">
+            <h4>Port Royal RYO</h4>
+            <p>30g / 150g · Roll Your Own</p>
+            <span class="product-price">FROM TOP$ 55</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONFECTIONERY -->
+    <div class="product-section" id="confectionery" data-reveal>
+      <div class="product-section-header">
+        <div>
+          <span class="eyebrow">Category 05</span>
+          <h2>Confectionery</h2>
+          <div class="brand-tags">
+            <span class="brand-tag">Toblerone</span>
+            <span class="brand-tag">Ferrero Rocher</span>
+            <span class="brand-tag">Cadbury</span>
+            <span class="brand-tag">Pascall</span>
+          </div>
+        </div>
+      </div>
+      <div class="product-items-grid">
+        <div class="product-item">
+          <div class="product-item-img">
+            <img src="https://images.unsplash.com/photo-1549007953-2f2dc0b24019?w=400&q=80&auto=format&fit=crop" alt="Toblerone chocolate" loading="lazy">
+          </div>
+          <div class="product-item-body">
+            <h4>Toblerone Gold</h4>
+            <p>400g · Milk Chocolate &amp; Honey Almond Nougat</p>
+            <span class="product-price">TOP$ 29</span>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img">
+            <img src="https://images.unsplash.com/photo-1548741487-18d363dc4469?w=400&q=80&auto=format&fit=crop" alt="Ferrero Rocher" loading="lazy">
+          </div>
+          <div class="product-item-body">
+            <h4>Ferrero Rocher</h4>
+            <p>30 pieces · 375g Gift Box</p>
+            <span class="product-price">TOP$ 25</span>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img">
+            <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?w=400&q=80&auto=format&fit=crop" alt="Cadbury chocolates" loading="lazy">
+          </div>
+          <div class="product-item-body">
+            <h4>Cadbury Favourites</h4>
+            <p>300g Assorted Box</p>
+            <span class="product-price">TOP$ 25</span>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img">
+            <img src="https://images.unsplash.com/photo-1549007953-2f2dc0b24019?w=400&q=80&auto=format&fit=crop&crop=right" alt="Chocolate gift" loading="lazy">
+          </div>
+          <div class="product-item-body">
+            <h4>Toblerone Tiny Gift Pack</h4>
+            <p>300g Assorted Mini Bars</p>
+            <span class="product-price">TOP$ 25</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RUGBY JERSEYS -->
+    <div class="product-section" id="jerseys" data-reveal>
+      <div class="product-section-header">
+        <div>
+          <span class="eyebrow">Category 06 · Exclusive</span>
+          <h2>Rugby Jerseys</h2>
+          <div class="brand-tags">
+            <span class="brand-tag">KooGa · Exclusive Agent</span>
+            <span class="brand-tag">'Ikale Tahi</span>
+            <span class="brand-tag">Mate Ma'a Tonga</span>
+            <span class="brand-tag">Men · Women · Junior</span>
+          </div>
+        </div>
+      </div>
+      <div class="product-items-grid">
+        <div class="product-item">
+          <div class="product-item-img">
+            <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=400&q=80&auto=format&fit=crop" alt="Rugby jersey" loading="lazy">
+          </div>
+          <div class="product-item-body">
+            <h4>'Ikale Tahi Jersey — Men</h4>
+            <p>Official Tonga Rugby Union · S–4XL</p>
+            <span class="product-price">TOP$ 149–249</span>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img">
+            <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&q=80&auto=format&fit=crop" alt="Tonga rugby" loading="lazy">
+          </div>
+          <div class="product-item-body">
+            <h4>'Ikale Tahi Jersey — Junior</h4>
+            <p>Official Tonga Rugby Union · Kids Sizes</p>
+            <span class="product-price">TOP$ 149</span>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img">
+            <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=400&q=80&auto=format&fit=crop&crop=right" alt="Mate Maa Tonga jersey" loading="lazy">
+          </div>
+          <div class="product-item-body">
+            <h4>Mate Ma'a Tonga Jersey — Men</h4>
+            <p>Official Tonga Rugby League · S–4XL</p>
+            <span class="product-price">TOP$ 189</span>
+          </div>
+        </div>
+        <div class="product-item">
+          <div class="product-item-img">
+            <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&q=80&auto=format&fit=crop&crop=right" alt="Rugby league jersey" loading="lazy">
+          </div>
+          <div class="product-item-body">
+            <h4>Mate Ma'a Tonga Jersey — Junior</h4>
+            <p>Official Tonga Rugby League · Kids Sizes</p>
+            <span class="product-price">TOP$ 189</span>
+          </div>
+        </div>
+      </div>
+      <p style="margin-top:20px;font-size:0.84rem;color:var(--text-light);">* Jersey orders are excluded from the 10% online discount. Prices may vary. Contact us for current availability.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <span class="eyebrow">Order Today</span>
+    <h2>Pre-Order &amp; Pick Up at the Airport</h2>
+    <p>Order online or by phone, pay at our store, and collect from our Fua'amotu Airport arrival or departure shop. Simple, fast, duty free.</p>
+    <div class="cta-actions">
+      <a href="contact.html" class="btn btn-primary">Place an Order</a>
+      <a href="discount.html" class="btn btn-ghost-light">
+        <span class="icon" data-icon="percent" style="width:16px;height:16px;"></span> 10% Off Online
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-brand-bar">
+    <span>Best Prices in The Pacific · Est. 1994 · Kingdom of Tonga</span>
+  </div>
+  <div class="footer-main">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo-text">Leiola Group<span>Duty Free</span></div>
+          <p>Tonga's sole duty-free retailer since 1994. Specialising in world-class brands across liquor, wine, fragrance, tobacco, confectionery and exclusive sportswear.</p>
+          <span class="footer-tagline">"Best Prices in The Pacific"</span>
+        </div>
+        <div>
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="brands.html">Exclusive Brands</a></li>
+            <li><a href="stores.html">Store Locations</a></li>
+            <li><a href="discount.html">Shop Online</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contact</h5>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="tel:+67627945">(+676) 27 945</a></li>
+            <li><a href="tel:+67625222">(+676) 25 222</a></li>
+            <li><a href="mailto:sales@leiola.to">sales@leiola.to</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Headquarters</h5>
+          <ul class="footer-links">
+            <li><a href="https://www.google.com/maps?q=-21.1368,-175.2011" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.32);text-decoration:none;line-height:1.7;">Dateline House, Unit 2<br>Ma'ufanga, Nuku'alofa<br>Kingdom of Tonga</a></li>
+          </ul>
+          <p style="margin-top:16px;font-size:0.72rem;color:rgba(255,255,255,0.18);line-height:1.6;">A subsidiary of Pacific Retail Ltd</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© 2026 Leiola Group Ltd. All rights reserved.</span>
+      <span style="color:rgba(255,255,255,0.16);">Nuku'alofa, Kingdom of Tonga</span>
+    </div>
+  </div>
+</footer>
+
+<a href="#" class="back-to-top" aria-label="Back to top">
+  <span class="icon" data-icon="arrow-up" style="width:18px;height:18px;"></span>
+</a>
+<script src="js/icons.js?v=1"></script>
+<script src="js/main.js?v=1"></script>
+</body>
+</html>
