@@ -77,6 +77,7 @@ p{color:var(--text-mid);line-height:1.75}
 .navbar .container{display:flex;align-items:stretch;height:72px}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;width:100%;gap:24px}
 .nav-logo{display:flex;align-items:center;gap:12px;flex-shrink:0;text-decoration:none}
+.nav-logo img{height:38px;width:auto;display:block}
 .nav-logo-text{font-family:var(--font-heading);font-size:1.25rem;font-weight:700;color:var(--text);letter-spacing:-0.01em;line-height:1.1}
 .nav-logo-text span{display:block;font-size:0.55rem;font-family:var(--font-body);font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold)}
 .nav-menu{display:flex;align-items:center;gap:2px}
@@ -254,8 +255,7 @@ p{color:var(--text-mid);line-height:1.75}
 .footer-brand-bar span{font-size:0.66rem;font-weight:700;letter-spacing:0.24em;text-transform:uppercase;color:var(--gold)}
 .footer-main{padding:64px 0}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.2fr;gap:48px}
-.footer-logo-text{font-family:var(--font-heading);font-size:1.35rem;font-weight:700;color:var(--white);letter-spacing:-0.01em;line-height:1.1}
-.footer-logo-text span{display:block;font-size:0.52rem;font-family:var(--font-body);font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold)}
+
 .footer-brand p{font-size:0.875rem;line-height:1.7;color:rgba(255,255,255,0.35);margin-top:14px}
 .footer-tagline{display:block;font-family:var(--font-heading);font-style:italic;font-size:1.05rem;color:var(--gold-light);margin-top:16px;opacity:0.65}
 .footer h5{font-family:var(--font-body);font-size:0.64rem;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.22);margin-bottom:18px}
