@@ -307,3 +307,24 @@ p{color:var(--text-mid);line-height:1.75}
   .split-img img{height:280px}
   html,body{overflow-x:hidden!important}
 }
+
+/* ─── PRINT ────────────────────────────────────────────────── */
+@media print{
+  .navbar,.back-to-top,.hero-scroll,.promo-band,.marquee-section,.cta-section,.footer,.btn,.nav-toggle{display:none!important}
+  body{color:#000;background:#fff;font-size:11pt}
+  a{color:#000;text-decoration:none}
+  h1,h2,h3,h4{color:#000;page-break-after:avoid}
+  .page-hero{padding:24px 0 16px;background:#fff;color:#000}
+  .page-hero .eyebrow,.page-hero h1,.page-hero p{color:#000}
+  .section,.section-alt{padding:24px 0;background:#fff!important}
+  .section-dark{background:#fff!important;color:#000!important}
+  .section-dark h2,.section-dark p,.section-dark .eyebrow{color:#000!important}
+  .store-card{border:1px solid #ccc;break-inside:avoid;margin-bottom:12pt}
+  .stores-grid{display:block}
+  .split{display:block}
+  .split-img{display:none}
+  .contact-grid{display:block}
+  .footer-links a{color:#000}
+  .contact-info-item a{color:#000}
+  @page{margin:20mm}
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found — Leiola Group Ltd</title>
+  <link rel="icon" href="images/leiola-logo.jpg" type="image/jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=1">
+  <style>
+    @media(max-width:900px){
+      .nav-menu{display:flex!important;position:fixed!important;top:0!important;left:0!important;right:0!important;bottom:0!important;width:100vw!important;height:100vh!important;background:#1c1208!important;flex-direction:column!important;align-items:center!important;justify-content:flex-start!important;gap:4px!important;padding:96px 28px 40px!important;overflow-y:auto!important;z-index:9999!important;opacity:0!important;transform:translateX(100%)!important;pointer-events:none!important;transition:opacity .35s ease,transform .35s cubic-bezier(.4,0,.2,1)!important}
+      .nav-menu.open{opacity:1!important;transform:translateX(0)!important;pointer-events:all!important}
+      .nav-toggle{display:flex!important;z-index:10000!important;position:relative!important}
+      .nav-menu a{font-size:1.1rem!important;padding:13px 28px!important;font-weight:600!important;color:rgba(255,255,255,0.85)!important;width:100%!important;text-align:center!important;display:block!important;border-radius:8px!important}
+      .nav-menu a:hover,.nav-menu a.active{color:#fff!important;background:rgba(92,184,48,0.15)!important}
+      .nav-cta{background:#5cb830!important;color:#1c1208!important;border-radius:6px!important;margin-top:12px!important;font-weight:700!important}
+    }
+    html,body{overflow-x:hidden!important}
+    .error-section{min-height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 20px}
+    .error-number{font-family:var(--font-heading);font-size:8rem;font-weight:700;line-height:1;color:var(--gold);display:block;margin-bottom:16px}
+    .error-section h1{font-size:2.2rem;margin-bottom:12px}
+    .error-section p{color:var(--text-light);max-width:420px;margin:0 auto 32px}
+    .error-links{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+    @media(max-width:480px){.error-number{font-size:5rem}}
+  </style>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="images/leiola-logo.jpg" alt="Leiola Group Ltd">
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="has-dropdown">
+          <a href="products.html">Products <span class="icon" data-icon="chevron-down" style="width:14px;height:14px;"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="products.html#liquor">Liquor &amp; Spirits</a></li>
+            <li><a href="products.html#wine">Wine &amp; Champagne</a></li>
+            <li><a href="products.html#fragrance">Fragrance</a></li>
+            <li><a href="products.html#tobacco">Tobacco</a></li>
+            <li><a href="products.html#confectionery">Confectionery</a></li>
+            <li><a href="products.html#jerseys">Rugby Jerseys</a></li>
+          </ul>
+        </li>
+        <li><a href="brands.html">Brands</a></li>
+        <li><a href="stores.html">Stores</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="icon" data-icon="menu" style="width:22px;height:22px;"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="error-section">
+  <div>
+    <span class="error-number">404</span>
+    <h1>Page Not Found</h1>
+    <p>The page you're looking for doesn't exist or may have moved. Head back to the homepage or browse our products.</p>
+    <div class="error-links">
+      <a href="index.html" class="btn btn-primary">Back to Home</a>
+      <a href="products.html" class="btn btn-ghost">Browse Products <span class="icon" data-icon="arrow-right" style="width:16px;height:16px;"></span></a>
+      <a href="contact.html" class="btn btn-ghost">Contact Us <span class="icon" data-icon="arrow-right" style="width:16px;height:16px;"></span></a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-brand-bar">
+    <span>Best Prices in The Pacific · Est. 1994 · Kingdom of Tonga</span>
+  </div>
+  <div class="footer-main">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/leiola-logo.jpg" alt="Leiola Group Ltd" style="height:40px;width:auto;margin-bottom:14px;border-radius:6px;padding:4px 8px;background:#fff;">
+          <p>Tonga's sole duty-free retailer since 1994. Specialising in world-class brands across liquor, wine, fragrance, tobacco, confectionery and exclusive sportswear.</p>
+          <span class="footer-tagline">"Best Prices in The Pacific"</span>
+        </div>
+        <div>
+          <h5>Navigation</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="brands.html">Exclusive Brands</a></li>
+            <li><a href="stores.html">Store Locations</a></li>
+            <li><a href="discount.html">Shop Online</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Contact</h5>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="tel:+67627945">(+676) 27 945</a></li>
+            <li><a href="tel:+67625222">(+676) 25 222</a></li>
+            <li><a href="mailto:sales@leiola.to">sales@leiola.to</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Headquarters</h5>
+          <ul class="footer-links">
+            <li><a href="https://www.google.com/maps?q=-21.1368,-175.2011" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.32);text-decoration:none;line-height:1.7;">Dateline House, Unit 2<br>Ma'ufanga, Nuku'alofa<br>Kingdom of Tonga</a></li>
+          </ul>
+          <p style="margin-top:16px;font-size:0.72rem;color:rgba(255,255,255,0.18);line-height:1.6;">A subsidiary of Pacific Retail Ltd</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© 2026 Leiola Group Ltd. All rights reserved.</span>
+      <span style="color:rgba(255,255,255,0.16);">Nuku'alofa, Kingdom of Tonga</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/icons.js?v=1"></script>
+<script src="js/main.js?v=1"></script>
+</body>
+</html>
