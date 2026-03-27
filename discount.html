@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Order Leiola duty-free online and save 10% using discount code DISCOUNT. Pre-order liquor, wine, fragrance and more for airport pickup in Tonga.">
-  <title>Shop Online — Save 10% — Leiola Group Ltd</title>
+  <meta name="description" content="Know your duty-free allowances before you fly. Leiola Group Ltd lists Tonga inbound allowances and international customs limits by country.">
+  <title>Duty-Free Allowances — Leiola Group Ltd</title>
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="images/leiola-logo.jpg" type="image/jpeg">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Leiola Group Ltd">
-  <meta property="og:title" content="Shop Online — Save 10% — Leiola Group Ltd">
-  <meta property="og:description" content="Pre-order your duty-free from Leiola and save 10% with code DISCOUNT. Collect at the airport or any store in Tonga.">
+  <meta property="og:title" content="Duty-Free Allowances — Leiola Group Ltd">
+  <meta property="og:description" content="Know your duty-free allowances before you fly. Tonga inbound limits and international customs allowances by country.">
   <meta property="og:url" content="https://shaydenlongley-star.github.io/leiola/discount.html">
   <meta property="og:image" content="https://shaydenlongley-star.github.io/leiola/images/article-02.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,17 +27,31 @@
       .nav-cta{background:#5cb830!important;color:#1c1208!important;border-radius:6px!important;margin-top:12px!important;font-weight:700!important}
     }
     html,body{overflow-x:hidden!important}
-    .allowance-box{background:var(--bg-2);border:1px solid var(--border-dark);border-radius:var(--radius);padding:32px;margin-top:64px}
-    .allowance-box h3{font-size:1.6rem;margin-bottom:16px}
-    .allowance-highlight{display:inline-block;padding:12px 20px;background:var(--gold);color:var(--dark);border-radius:var(--radius-sm);font-weight:700;font-size:0.9rem;margin-bottom:16px}
-    .country-table{width:100%;border-collapse:collapse;margin-top:24px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm)}
-    .country-table th{background:var(--dark);color:var(--white);padding:12px 18px;font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;text-align:left}
-    .country-table td{padding:11px 18px;font-size:0.85rem;color:var(--text-mid);border-bottom:1px solid var(--border-dark);background:var(--white)}
+    .allowance-hero{background:var(--dark);border-radius:var(--radius);padding:40px 48px;margin-bottom:48px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+    .allowance-hero-stat{text-align:center}
+    .allowance-hero-num{font-family:var(--font-heading);font-size:3.2rem;font-weight:700;color:var(--gold);display:block;line-height:1}
+    .allowance-hero-label{font-size:0.78rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.5);display:block;margin-top:6px}
+    .allowance-hero-divider{width:1px;background:rgba(255,255,255,0.12);height:80px;margin:auto}
+    .allowance-card{background:var(--white);border:1px solid var(--border-dark);border-radius:var(--radius);padding:32px 36px;margin-bottom:32px}
+    .allowance-card h3{font-size:1.5rem;margin-bottom:20px;display:flex;align-items:center;gap:10px}
+    .allowance-card h3 .icon{color:var(--gold);width:22px;height:22px;flex-shrink:0}
+    .allowance-row{display:flex;align-items:flex-start;gap:12px;padding:14px 0;border-bottom:1px solid var(--border-dark)}
+    .allowance-row:last-child{border-bottom:none}
+    .allowance-row-icon{width:36px;height:36px;background:var(--gold-pale);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .allowance-row-icon .icon{color:var(--gold-dark);width:16px;height:16px}
+    .allowance-row-text strong{display:block;font-size:0.9rem;margin-bottom:2px}
+    .allowance-row-text span{font-size:0.82rem;color:var(--text-light)}
+    .country-table{width:100%;border-collapse:collapse;margin-top:8px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm)}
+    .country-table th{background:var(--dark);color:var(--white);padding:13px 18px;font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;text-align:left}
+    .country-table td{padding:12px 18px;font-size:0.85rem;color:var(--text-mid);border-bottom:1px solid var(--border-dark);background:var(--white)}
     .country-table tr:last-child td{border-bottom:none}
     .country-table tr:hover td{background:var(--gold-pale)}
-    .terms-note{background:var(--bg-2);border-left:3px solid var(--gold);padding:16px 20px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:0.84rem;color:var(--text-mid);margin-top:32px;line-height:1.7}
-    @media(max-width:640px){
+    .terms-note{background:var(--bg-2);border-left:3px solid var(--gold);padding:18px 22px;border-radius:0 var(--radius-sm) var(--radius-sm) 0;font-size:0.84rem;color:var(--text-mid);margin-top:32px;line-height:1.7}
+    @media(max-width:768px){
+      .allowance-hero{grid-template-columns:1fr;padding:28px 24px;gap:20px}
+      .allowance-hero-divider{display:none}
       .country-table th,.country-table td{padding:9px 12px;font-size:0.78rem}
+      .allowance-card{padding:24px 20px}
     }
   </style>
 </head>
@@ -80,183 +94,146 @@
     <div class="breadcrumb">
       <a href="index.html">Home</a>
       <span class="breadcrumb-sep">/</span>
-      <span>Shop Online</span>
+      <span>Duty-Free Allowances</span>
     </div>
-    <span class="eyebrow">Online Exclusive</span>
-    <h1>Save <em>10%</em> When You<br>Order Online</h1>
-    <p>Pre-order your duty-free by phone or email, use the discount code, and collect at our airport or any Leiola store.</p>
+    <span class="eyebrow">Travel Smart</span>
+    <h1>Know Your <em>Duty-Free</em><br>Allowances</h1>
+    <p>Before you shop, know what you can bring home. Here are the duty-free limits for Tonga and destinations around the world.</p>
   </div>
 </section>
 
-<!-- DISCOUNT CODE BOX -->
+<!-- TONGA INBOUND -->
 <section class="section">
   <div class="container">
-    <div class="discount-hero-box" data-reveal>
-      <span class="eyebrow">Your Discount Code</span>
-      <span class="discount-big">10%</span>
-      <span class="discount-big-label">off your entire order</span>
-      <p style="color:rgba(255,255,255,0.55);margin-bottom:20px;font-size:0.95rem;">Use this code when you contact us to place your order online or by email</p>
-      <div class="discount-code-box">
-        <span class="discount-code">DISCOUNT</span>
-        <button class="copy-btn">
-          <span class="icon" data-icon="copy" style="width:14px;height:14px;"></span> Copy
-        </button>
+
+    <div class="allowance-hero" data-reveal>
+      <div style="color:#fff;">
+        <span class="eyebrow" style="color:var(--gold);">Arriving Into Tonga</span>
+        <h2 style="color:#fff;font-size:2rem;margin:8px 0 12px;">Tonga Inbound Allowances</h2>
+        <p style="color:rgba(255,255,255,0.55);font-size:0.88rem;">Per person entering the Kingdom of Tonga. Age restrictions apply: 18+ for alcohol, 16+ for tobacco.</p>
       </div>
-      <p style="color:rgba(255,255,255,0.38);font-size:0.8rem;">*Excludes items already on special deal pricing, Mix n Match deals, and Rugby &amp; League jersey orders</p>
+      <div style="display:flex;gap:24px;align-items:center;justify-content:center;flex-wrap:wrap;">
+        <div class="allowance-hero-stat">
+          <span class="allowance-hero-num">2.25L</span>
+          <span class="allowance-hero-label">Spirits</span>
+        </div>
+        <div class="allowance-hero-divider"></div>
+        <div class="allowance-hero-stat">
+          <span class="allowance-hero-num">4.5L</span>
+          <span class="allowance-hero-label">Wine or Beer</span>
+        </div>
+        <div class="allowance-hero-divider"></div>
+        <div class="allowance-hero-stat">
+          <span class="allowance-hero-num">500</span>
+          <span class="allowance-hero-label">Cigarettes</span>
+        </div>
+      </div>
     </div>
+
+    <div class="allowance-card" data-reveal>
+      <h3><span class="icon" data-icon="check"></span> Tonga Customs — Detailed Breakdown</h3>
+      <div class="allowance-row">
+        <div class="allowance-row-icon"><span class="icon" data-icon="tag"></span></div>
+        <div class="allowance-row-text">
+          <strong>Spirits (over 22% ABV)</strong>
+          <span>2.25 litres — approximately 3 × 750ml bottles</span>
+        </div>
+      </div>
+      <div class="allowance-row">
+        <div class="allowance-row-icon"><span class="icon" data-icon="sparkles"></span></div>
+        <div class="allowance-row-text">
+          <strong>Wine or Beer</strong>
+          <span>4.5 litres — approximately 6 × 750ml bottles of wine, or a case of beer</span>
+        </div>
+      </div>
+      <div class="allowance-row">
+        <div class="allowance-row-icon"><span class="icon" data-icon="percent"></span></div>
+        <div class="allowance-row-text">
+          <strong>Cigarettes</strong>
+          <span>500 cigarettes (2 × cartons of 250 sticks), OR 500 grams of tobacco</span>
+        </div>
+      </div>
+      <div class="allowance-row">
+        <div class="allowance-row-icon"><span class="icon" data-icon="star"></span></div>
+        <div class="allowance-row-text">
+          <strong>Age Restrictions</strong>
+          <span>18+ for alcohol &nbsp;·&nbsp; 16+ for tobacco. Full customs charges apply on goods in excess of allowances.</span>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
+<!-- INTERNATIONAL TABLE -->
 <section class="section-alt">
   <div class="container">
     <div class="section-header" data-reveal>
-      <span class="eyebrow">How It Works</span>
-      <h2>Three Simple Steps</h2>
+      <span class="eyebrow">Returning Home</span>
+      <h2>International Allowances <em>by Country</em></h2>
       <div class="divider"></div>
-      <p>Ordering is easy — no complicated checkout, no website account required. Just browse, contact us, and collect.</p>
+      <p>Heading home after visiting Tonga? Check what you can bring back to your country — these limits apply at your destination customs.</p>
+    </div>
+    <div data-reveal style="overflow-x:auto;">
+      <table class="country-table">
+        <thead>
+          <tr>
+            <th>Country</th>
+            <th>Alcohol Allowance</th>
+            <th>Tobacco Allowance</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Australia</strong></td><td>2.25 litres</td><td>50 cigarettes or 50g tobacco</td></tr>
+          <tr><td><strong>New Zealand</strong></td><td>Up to 3L spirits + 6 bottles wine</td><td>200 cigarettes or 50 cigars or 250g tobacco</td></tr>
+          <tr><td><strong>Fiji</strong></td><td>4.5L wine/beer or 2.25L spirits</td><td>250 cigarettes or 250g tobacco/cigars</td></tr>
+          <tr><td><strong>Samoa</strong></td><td>1 litre</td><td>200 cigarettes or 250g tobacco/cigars</td></tr>
+          <tr><td><strong>Canada</strong></td><td>1 litre</td><td>200 cigarettes or 50 cigars</td></tr>
+          <tr><td><strong>China</strong></td><td>1.5 litres</td><td>400 cigarettes</td></tr>
+          <tr><td><strong>Hong Kong</strong></td><td>1 litre</td><td>19 cigarettes or 25g tobacco</td></tr>
+          <tr><td><strong>Japan</strong></td><td>3 × 750ml bottles</td><td>200 (residents) / 400 (non-residents) cigarettes or 250g tobacco</td></tr>
+          <tr><td><strong>Korea</strong></td><td>1 litre</td><td>200 cigarettes or 50 cigars</td></tr>
+          <tr><td><strong>Malaysia</strong></td><td>1 litre</td><td>200 cigarettes or 50 cigars or 225g tobacco</td></tr>
+          <tr><td><strong>New Caledonia</strong></td><td>2L spirits + 2L wine</td><td>200 cigarettes or 100 cigarillos or 50 cigars or 400g tobacco</td></tr>
+          <tr><td><strong>Norfolk Island</strong></td><td>1 litre</td><td>200 cigarettes or 250g tobacco</td></tr>
+          <tr><td><strong>Singapore</strong></td><td>1L spirits + 1L wine or beer</td><td>No allowance — all tobacco must be declared</td></tr>
+          <tr><td><strong>South Africa</strong></td><td>2L wine + 1L spirits</td><td>400 cigarettes + 250g tobacco + 50 cigars</td></tr>
+          <tr><td><strong>Taiwan</strong></td><td>1 litre</td><td>200 cigarettes or 25 cigars or 500g tobacco</td></tr>
+          <tr><td><strong>Thailand</strong></td><td>1 litre</td><td>200 cigarettes or 250g tobacco</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="terms-note" data-reveal>
+      <strong>Important:</strong> Duty-free allowances can change from time to time without notice. Always confirm with our staff at the time of purchase or check with your destination country's customs authority. Full customs charges are payable on goods which are not eligible for concession or in excess of the allowances. Importing prohibited goods or using false receipts can result in fines, loss of goods or imprisonment.
+    </div>
+  </div>
+</section>
+
+<!-- PRE-ORDER -->
+<section class="section">
+  <div class="container">
+    <div class="section-header" data-reveal>
+      <span class="eyebrow">Airport Collection</span>
+      <h2>Pre-Order &amp; <em>Collect at the Airport</em></h2>
+      <div class="divider"></div>
+      <p>Browse our range, contact us to place your order, then collect duty-free at Fua'amotu Airport — arriving or departing.</p>
     </div>
     <div class="steps-row">
       <div class="step-item" data-reveal data-delay="1">
         <div class="step-number">1</div>
         <h4>Browse the Range</h4>
-        <p>Browse our products page and note what you'd like to order. Check quantities against your duty-free allowance.</p>
+        <p>Browse our products and note what you'd like. Check quantities against your duty-free allowance.</p>
       </div>
       <div class="step-item" data-reveal data-delay="2">
         <div class="step-number">2</div>
         <h4>Contact Us to Order</h4>
-        <p>Call (+676) 25 222 or email sales@leiola.to with your order. Mention the discount code <strong>DISCOUNT</strong> for 10% off.</p>
+        <p>Call (+676) 25 222 or email sales@leiola.to with your product list and we'll prepare your order.</p>
       </div>
       <div class="step-item" data-reveal data-delay="3">
         <div class="step-number">3</div>
         <h4>Pay &amp; Collect</h4>
         <p>Pay at our store or at the airport — cash, credit card or eftpos. Present your order ID at collection.</p>
-      </div>
-    </div>
-    <div style="text-align:center;margin-top:48px;" data-reveal>
-      <p style="color:var(--text-light);font-size:0.875rem;margin-bottom:20px;">You can pay online via bank transfer, or in person with cash, credit/debit card or eftpos at any store.</p>
-      <div style="display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;">
-        <a href="contact.html" class="btn btn-primary">Place an Order Now</a>
-        <a href="tel:+67625222" class="btn btn-ghost">
-          <span class="icon" data-icon="phone" style="width:16px;height:16px;"></span> Call (+676) 25 222
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- SHOP BY CATEGORY -->
-<section class="section">
-  <div class="container">
-    <div class="section-header" data-reveal>
-      <span class="eyebrow">Start Browsing</span>
-      <h2>Shop by Category</h2>
-      <div class="divider"></div>
-    </div>
-    <div class="service-grid">
-      <a href="products.html#liquor" class="service-card" data-reveal data-delay="1">
-        <div class="service-card-icon">
-          <span class="icon" data-icon="tag" style="width:24px;height:24px;"></span>
-        </div>
-        <h3>Liquor &amp; Spirits</h3>
-        <p>Whisky, rum, vodka, gin, bourbon, tequila, cognac, liqueurs and more — from TOP$ 22</p>
-        <span class="service-card-link">Browse <span class="icon" data-icon="arrow-right" style="width:14px;height:14px;"></span></span>
-      </a>
-      <a href="products.html#wine" class="service-card" data-reveal data-delay="2">
-        <div class="service-card-icon">
-          <span class="icon" data-icon="sparkles" style="width:24px;height:24px;"></span>
-        </div>
-        <h3>Wine &amp; Champagne</h3>
-        <p>New Zealand and Australian wines plus Moët &amp; Chandon champagnes — from TOP$ 17</p>
-        <span class="service-card-link">Browse <span class="icon" data-icon="arrow-right" style="width:14px;height:14px;"></span></span>
-      </a>
-      <a href="products.html#fragrance" class="service-card" data-reveal data-delay="3">
-        <div class="service-card-icon">
-          <span class="icon" data-icon="gift" style="width:24px;height:24px;"></span>
-        </div>
-        <h3>Fragrance</h3>
-        <p>Calvin Klein, Davidoff, Britney Spears, Lady Gaga, JLo and more — from TOP$ 103</p>
-        <span class="service-card-link">Browse <span class="icon" data-icon="arrow-right" style="width:14px;height:14px;"></span></span>
-      </a>
-      <a href="products.html#tobacco" class="service-card" data-reveal data-delay="1">
-        <div class="service-card-icon">
-          <span class="icon" data-icon="percent" style="width:24px;height:24px;"></span>
-        </div>
-        <h3>Tobacco</h3>
-        <p>Marlboro, Longbeach, Pall Mall, Winfield — from TOP$ 55 per carton</p>
-        <span class="service-card-link">Browse <span class="icon" data-icon="arrow-right" style="width:14px;height:14px;"></span></span>
-      </a>
-      <a href="products.html#confectionery" class="service-card" data-reveal data-delay="2">
-        <div class="service-card-icon">
-          <span class="icon" data-icon="star" style="width:24px;height:24px;"></span>
-        </div>
-        <h3>Confectionery</h3>
-        <p>Toblerone, Ferrero Rocher, Cadbury, Pascall — from TOP$ 8</p>
-        <span class="service-card-link">Browse <span class="icon" data-icon="arrow-right" style="width:14px;height:14px;"></span></span>
-      </a>
-      <a href="products.html#jerseys" class="service-card" data-reveal data-delay="3">
-        <div class="service-card-icon">
-          <span class="icon" data-icon="shield" style="width:24px;height:24px;"></span>
-        </div>
-        <h3>Rugby Jerseys</h3>
-        <p>'Ikale Tahi &amp; Mate Ma'a Tonga official jerseys — from TOP$ 149 <em style="font-size:0.75rem;color:var(--text-light);font-style:normal;">(10% discount does not apply)</em></p>
-        <span class="service-card-link">Browse <span class="icon" data-icon="arrow-right" style="width:14px;height:14px;"></span></span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ALLOWANCES -->
-<section class="section-alt">
-  <div class="container">
-    <div class="section-header" data-reveal>
-      <span class="eyebrow">Know Your Limits</span>
-      <h2>Duty-Free <em>Allowances</em></h2>
-      <div class="divider"></div>
-      <p>Make sure you stay within your country's duty-free allowance when bringing goods home. Here's a quick guide.</p>
-    </div>
-    <div data-reveal>
-      <div class="allowance-box">
-        <h3>Tonga Inbound Allowances</h3>
-        <div class="allowance-highlight">Per person arriving into Tonga</div>
-        <p style="margin-bottom:12px;"><strong>Alcohol:</strong> 2.25 litres of spirits OR 4.5 litres of wine OR 4.5 litres of beer</p>
-        <p><strong>Tobacco:</strong> 500 cigarettes (2 × cartons of 250 sticks) OR 500 grams of tobacco</p>
-        <p style="margin-top:12px;font-size:0.84rem;color:var(--text-light);">Age restrictions: 18+ for alcohol · 16+ for tobacco. Full customs charges apply on goods in excess of allowances.</p>
-      </div>
-
-      <h3 style="margin-top:48px;margin-bottom:20px;font-size:1.6rem;">International Allowances by Country</h3>
-      <div style="overflow-x:auto;">
-        <table class="country-table">
-          <thead>
-            <tr>
-              <th>Country</th>
-              <th>Alcohol Allowance</th>
-              <th>Tobacco Allowance</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr><td><strong>Australia</strong></td><td>2.25 litres</td><td>50 cigarettes or 50g tobacco</td></tr>
-            <tr><td><strong>New Zealand</strong></td><td>Up to 3L spirits + 6 bottles wine</td><td>200 cigarettes or 50 cigars or 250g tobacco</td></tr>
-            <tr><td><strong>Fiji</strong></td><td>4.5L wine/beer or 2.25L spirits</td><td>250 cigarettes or 250g tobacco/cigars</td></tr>
-            <tr><td><strong>Samoa</strong></td><td>1 litre</td><td>200 cigarettes or 250g tobacco/cigars</td></tr>
-            <tr><td><strong>Canada</strong></td><td>1 litre</td><td>200 cigarettes or 50 cigars</td></tr>
-            <tr><td><strong>China</strong></td><td>1.5 litres</td><td>400 cigarettes</td></tr>
-            <tr><td><strong>Hong Kong</strong></td><td>1 litre</td><td>19 cigarettes or 25g tobacco</td></tr>
-            <tr><td><strong>Japan</strong></td><td>3 × 750ml bottles</td><td>200 (residents) / 400 (non-residents) cigarettes or 250g tobacco</td></tr>
-            <tr><td><strong>Korea</strong></td><td>1 litre</td><td>200 cigarettes or 50 cigars</td></tr>
-            <tr><td><strong>Malaysia</strong></td><td>1 litre</td><td>200 cigarettes or 50 cigars or 225g tobacco</td></tr>
-            <tr><td><strong>New Caledonia</strong></td><td>2L spirits + 2L wine</td><td>200 cigarettes or 100 cigarillos or 50 cigars or 400g tobacco</td></tr>
-            <tr><td><strong>Norfolk Island</strong></td><td>1 litre</td><td>200 cigarettes or 250g tobacco</td></tr>
-            <tr><td><strong>Singapore</strong></td><td>1L spirits + 1L wine or beer</td><td>No allowance — all tobacco must be declared</td></tr>
-            <tr><td><strong>South Africa</strong></td><td>2L wine + 1L spirits</td><td>400 cigarettes + 250g tobacco + 50 cigars</td></tr>
-            <tr><td><strong>Taiwan</strong></td><td>1 litre</td><td>200 cigarettes or 25 cigars or 500g tobacco</td></tr>
-            <tr><td><strong>Thailand</strong></td><td>1 litre</td><td>200 cigarettes or 250g tobacco</td></tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="terms-note">
-        <strong>Important:</strong> Duty-free allowances can change from time to time without notice. Always confirm with our staff at the time of purchase or check with your destination country's customs authority. Full customs charges are payable on goods which are not eligible for concession or in excess of the allowances. Importing prohibited goods or using false receipts can result in fines, loss of goods or imprisonment.
       </div>
     </div>
   </div>
@@ -265,14 +242,12 @@
 <!-- CTA -->
 <section class="cta-section">
   <div class="container">
-    <span class="eyebrow">Ready to Order?</span>
-    <h2>Place Your Order Today</h2>
-    <p>Call or email our team to place your pre-order. Don't forget your 10% discount code.</p>
+    <span class="eyebrow">Get in Touch</span>
+    <h2>Ready to Shop Duty Free?</h2>
+    <p>Visit any of our six locations across Tonga or contact our team to discuss your order and airport collection.</p>
     <div class="cta-actions">
-      <a href="contact.html" class="btn btn-primary">Contact Us to Order</a>
-      <a href="mailto:sales@leiola.to" class="btn btn-ghost-light">
-        <span class="icon" data-icon="mail" style="width:16px;height:16px;"></span> sales@leiola.to
-      </a>
+      <a href="contact.html" class="btn btn-primary">Contact Us</a>
+      <a href="stores.html" class="btn btn-ghost-light">Find a Store <span class="icon" data-icon="arrow-right" style="width:16px;height:16px;"></span></a>
     </div>
   </div>
 </section>
@@ -298,7 +273,7 @@
             <li><a href="products.html">Products</a></li>
             <li><a href="brands.html">Exclusive Brands</a></li>
             <li><a href="stores.html">Store Locations</a></li>
-            <li><a href="discount.html">Shop Online</a></li>
+            <li><a href="discount.html">Allowances</a></li>
           </ul>
         </div>
         <div>
